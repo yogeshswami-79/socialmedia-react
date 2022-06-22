@@ -1,10 +1,10 @@
 import React from 'react';
 import "./rightbar.css"
 
-function Rightbar() {
+const Rightbar = () => {
     return (
         <div>
-            
+            rightbar
         </div>
     );
 }
