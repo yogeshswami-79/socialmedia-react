@@ -4,12 +4,12 @@ import React from 'react';
 import "./topbar.css"
 
 
-const Topbar = () => {
+const Topbar = (props) => {
     return (
         <div className='topbarContainer'>
             
             <div className="topbarLeft">
-                <span className="logo">Lamasocial</span>
+                <span className="logo">{props.name}</span>
             </div>
             
             <div className="topbarCenter">

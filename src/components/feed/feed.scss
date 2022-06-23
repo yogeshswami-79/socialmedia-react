@@ -1,0 +1,10 @@
+@import "../../Utils/constants";
+
+.feed{
+    @include homeItems(8);
+    display: block;
+}
+
+.feedWrapper{
+    padding: 20px;
+}

@@ -1,0 +1,11 @@
+.feed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 10;
+  display: block;
+}
+
+.feedWrapper {
+  padding: 20px;
+}/*# sourceMappingURL=feed.css.map */
