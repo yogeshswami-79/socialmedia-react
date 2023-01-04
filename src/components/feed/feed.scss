@@ -1,10 +1,13 @@
 @import "../../Utils/constants";
 
-.feed{
+.feed {
     @include homeItems(8);
+    grid: feed;
     display: block;
-}
+    height: 100%;
+    overflow: scroll;
 
-.feedWrapper{
-    padding: 20px;
+    .feedWrapper {
+        padding: 20px;
+    }
 }

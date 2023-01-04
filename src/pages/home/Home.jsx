@@ -1,21 +1,15 @@
-import Topbar from "../../components/topbar/Topbar";
 import Sidebar from "../../components/sidebar/Sidebar";
 import Feed from "../../components/feed/Feed";
 import RightBar from "../../components/rightbar/Rightbar"
-import './home.css'
-import Constants from '../../Utils/constants.json'
+import './home.scss'
 
 const Home = () => {
     return (
-        <>
-            <Topbar name={Constants.AppName} />
-            <div className="homeContainer">
+        <div className="homeContainer">
                 <Sidebar />
                 <Feed />
                 <RightBar />
-            </div>
-
-        </>
+        </div>
     );
 }
 

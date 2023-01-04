@@ -2,6 +2,9 @@
 $fontSize: 1.8vh;
 
 .rightbar{
+    grid: rightbar;
+    height: 100%;
+    overflow: scroll;
     @include homeItems(4);
     align-items: start;
 }

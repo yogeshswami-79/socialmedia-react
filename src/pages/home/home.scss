@@ -1,4 +1,27 @@
 .homeContainer{
-    display: flex;
+    display: grid;
     width: 100%;
+    height: 100%;
+
+    grid-template-rows: 100%;
+    grid-template-columns: 1fr 6fr 2fr;
+    grid-template-areas: "sidebar feed rightbar";
+
+    &:nth-child(n){
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    &:nth-child(1){
+        grid: sidebar;
+    }
+
+    &:nth-child(2){
+        grid: feed;
+    }
+
+    &:nth-child(3){
+        grid: rightbar;
+    }
 }

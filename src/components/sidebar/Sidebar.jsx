@@ -1,11 +1,13 @@
 import React from 'react';
-import "./sidebar.css"
 import { RssFeed, HelpOutline, GroupAdd, Bookmark, WorkOutline, Event, School, Chat, PlayCircleOutline } from '@mui/icons-material'
+import "./sidebar.scss"
 
 const Sidebar = () => {
     return (
         <div className="sidebar">
+
             <div className="sidebarWrapper">
+            
                 <ul className="sidebarList">
 
                     <li className="sidebarListItem">
