@@ -25,3 +25,16 @@
         grid: rightbar;
     }
 }
+
+@media only screen and (max-width:800px) {
+
+    .homeContainer{
+        display: block;
+    }
+    .sidebar{
+        display: none;
+    }
+    .rightbar{
+        display: none;
+    }
+}
