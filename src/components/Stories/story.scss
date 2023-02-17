@@ -1,0 +1,32 @@
+.story-container{
+    height: 10vh;
+    padding: 0;
+    width: 15%;
+    margin: 0 5px;
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    img{
+        margin: 0;
+        padding: 0;
+        height: 50%;
+        border-radius: 50%;
+        aspect-ratio: 1;
+        object-fit: cover;
+        border: 2px solid rgb(228, 51, 110);
+    }
+
+    .name{
+        height: auto;
+        margin: 0;
+        padding: 0;
+        width: fit-content;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: clip;
+        font-size: smaller;
+    }
+}

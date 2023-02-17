@@ -11,12 +11,22 @@ $sidebarFontSize : 1.6vh;
 }
 
 .sidebarWrapper {
-    padding:20px;
+    position: relative;
+    top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .sidebarList {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
     padding: 0;
-    margin: 0;
+    margin: 2vh 0;
     list-style: none;
     cursor: pointer;
 }
@@ -24,7 +34,6 @@ $sidebarFontSize : 1.6vh;
 .sidebarListItem {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
 }
 
 .sidebarIcon {
@@ -41,6 +50,9 @@ $sidebarFontSize : 1.6vh;
 }
 
 .sidebarHr {
+    width: 8vw;
+    height: 1px;
+    background-color: rgb(107, 107, 107);
     margin: 20px 0;
 }
 

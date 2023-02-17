@@ -1,12 +1,33 @@
-import React from 'react'
+import React, { useEffect , useRef } from 'react'
 import  HomeIcon from '@mui/icons-material/HomeOutlined'
 import InfoIcon from '@mui/icons-material/InfoSharp'
 import ShortcutIcon from '@mui/icons-material/Shortcut';
-import Close from '@mui/icons-material/Close'
+// import Close from '@mui/icons-material/Close'
 import Search from '@mui/icons-material/Search';
 import './navbar.scss';
 
 export default function Navbar() {
+
+const searchRef = useRef();
+
+useEffect(()=>{
+
+},[])
+
+useEffect(()=>{
+  const searchInputElement = searchRef.current;
+  const searchIcon = document.getElementsByClassName('search-icon')[0];
+  searchInputElement.addEventListener('focus',()=>{
+    searchIcon.style.height="50%";
+  })
+
+  searchInputElement.addEventListener('focusout', ()=>{
+    searchIcon.style.height="0";
+  })
+
+},[searchRef])
+
+
   return (
     <div id="navbar">
       
@@ -38,9 +59,9 @@ export default function Navbar() {
        </div>
 
         <div className="search-bar">
-          <input type="text" className="search" placeholder='search'/>
-          <Close />
-          <Search />
+          <input type="text" className="search" placeholder='search' ref={searchRef}/>
+          {/* <Close className="clear-icon" onClick={()=>{searchRef.current.value=""}}/> */}
+          <Search className="search-icon" />
         </div>
 
       </div>

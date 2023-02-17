@@ -10,7 +10,7 @@ const Post = ({post}) => {
 
                 <div className="postTop">
                     <div className="postTopLeft">
-                        <img src={Users[post.userId].profilePicture} alt="" className="postProfileImg" />
+                        <img src={Users[post.userId].profilePicture} alt="" className="postProfileImg" loading='lazy'/>
                         <span className="postUsername">{Users[post.userId].username}</span>
                         <span className="postDate">{post.date}</span>
                     </div>
@@ -21,7 +21,7 @@ const Post = ({post}) => {
 
                 <div className="postCenter">
                     <span className="postText">{post?.desc}</span>
-                    <img src={post.photo} alt="" className='postImg'/>
+                    <img src={post.photo} alt="" className='postImg' loading="lazy"/>
                 </div>
 
                 <div className="postBottom">
